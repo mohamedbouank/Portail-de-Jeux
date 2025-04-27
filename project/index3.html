@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portail de Marques Automobiles</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container" id="loginPage">
+            <h1>Portail de Marques Automobiles</h1>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Nom d'utilisateur">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Mot de passe">
+            </div>
+            <button id="loginButton">Se connecter</button>
+            <p style="margin-top: 20px;">Pas de compte? <a href="#" id="signupLink">S'inscrire</a></p>
+        </div>
+        
+        <div class="login-container hide" id="signupPage">
+            <h1>Créer un compte</h1>
+            <div class="input-group">
+                <input type="text" id="newUsername" placeholder="Nom d'utilisateur">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <input type="password" id="newPassword" placeholder="Mot de passe">
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe">
+            </div>
+            <button id="signupButton">S'inscrire</button>
+            <p style="margin-top: 20px;">Déjà un compte? <a href="#" id="loginLink">Se connecter</a></p>
+        </div>
+        
+        <div class="brands-container hide" id="brandsPage">
+            <h1>Choisissez une marque</h1>
+            <div class="brands-grid">
+                <div class="brand-card" id="teslaCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" alt="Logo Tesla" class="brand-icon">
+                        <div class="brand-name">Tesla</div>
+                    </div>
+                    <p>Voitures électriques</p>
+                </div>
+                <div class="brand-card" id="bmwCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/960px-BMW.svg.png" alt="Logo BMW" class="brand-icon">
+                        <div class="brand-name">BMW</div>
+                    </div>
+                    <p>Performance et luxe</p>
+                </div>
+                <div class="brand-card" id="toyotaCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://images.seeklogo.com/logo-png/14/1/toyota-logo-png_seeklogo-141405.png" alt="Logo Toyota" class="brand-icon">
+                        <div class="brand-name">Toyota</div>
+                    </div>
+                    <p>Fiabilité japonaise</p>
+                </div>
+                <div class="brand-card" id="audiCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://pictures.dealer.com/k/keyesaudishermanoaksaoa/0416/d82ee5a1af7fd3baa30a98070b91144ax.jpg" alt="Logo Audi" class="brand-icon">
+                        <div class="brand-name">Audi</div>
+                    </div>
+                    <p>Technologie allemande</p>
+                </div>
+                <div class="brand-card" id="mercedesCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Mercedes-Benz_Star_2022.svg" alt="Logo Mercedes" class="brand-icon">
+                        <div class="brand-name">Mercedes</div>
+                    </div>
+                    <p>Élégance et prestige</p>
+                </div>
+                <div class="brand-card" id="peugeotCard">
+                    <div class="brand-logo-wrapper">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/peugeot-1-logo-svg-vector.svg" alt="Logo Peugeot" class="brand-icon">
+                        <div class="brand-name">Peugeot</div>
+                    </div>
+                    <p>Style français</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="car-container hide" id="teslaPage">
+            <h1>Dernier Modèle Tesla</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://www.motortrend.com/files/67b6571b66bfb80008473954/1-2025-tesla-model-3-front-view.jpg" alt="Tesla Model S Plaid vue principale" class="car-image main-car-image">
+                    <img src="https://cars.usnews.com/static/images/Auto/izmo/i159616182/2024_tesla_model_3_rearview.jpg" alt="Tesla Model S Plaid vue avant" class="car-image">
+                    <img src="https://autoimage.capitalone.com/cms/Auto/assets/images/3654-inset04-2025-tesla-model-3-performance-black-and-white-interior.jpg" alt="Tesla Model S Plaid vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>Tesla Model S Plaid (2025)</h2>
+                    <div class="car-price">À partir de 119.900 €</div>
+                    <p>La berline électrique la plus rapide au monde avec une accélération de 0 à 100 km/h en moins de 2 secondes.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 600 km (WLTP)</li>
+                            <li>Puissance: 1020 ch (trois moteurs)</li>
+                            <li>Vitesse maximale: 322 km/h</li>
+                            <li>Écran central 17" avec interface repensée</li>
+                            <li>Autopilot avancé avec capacités de conduite autonome</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="teslaBack">Retour aux marques</button>
+        </div>
+        
+        <div class="car-container hide" id="bmwPage">
+            <h1>Dernier Modèle BMW</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://i.ytimg.com/vi/XmBKtF6gDgA/maxresdefault.jpg" alt="BMW iX M60 vue principale" class="car-image main-car-image">
+                    <img src="https://i.ytimg.com/vi/i-kJ5ssTcBo/hq720.jpg?rs=AOn4CLBMuG3DP4Tagf1y8kj58GW3CdTy-g&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD" alt="BMW iX M60 vue arrière" class="car-image">
+                    <img src="https://dealerinspire-image-library-prod.s3.us-east-1.amazonaws.com/images/r3hvkEODeQ67BX6Ddv3dkWHlWMTd4JlPrpo5wZcm.jpg" alt="BMW iX M60 vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>BMW iX M60 (2025)</h2>
+                    <div class="car-price">À partir de 139.950 €</div>
+                    <p>Le SUV 100% électrique haute performance qui allie luxe et sportivité.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 566 km (WLTP)</li>
+                            <li>Puissance: 619 ch</li>
+                            <li>0 à 100 km/h: 3,8 secondes</li>
+                            <li>Écran incurvé BMW avec OS 8.5</li>
+                            <li>Système audio Bowers & Wilkins Diamond Surround</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="bmwBack">Retour aux marques</button>
+        </div>
+        
+        <div class="car-container hide" id="toyotaPage">
+            <h1>Dernier Modèle Toyota</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-toyota-crown-signia-102-661fe11678096.jpg?crop=0.730xw%3A0.549xh%3B0.197xw%2C0.312xh&resize=1200%3A%2A" alt="Toyota bZ4X vue principale" class="car-image main-car-image">
+                    <img src="https://di-sitebuilder-assets.dealerinspire.com/Toyota/MLP/CrownSignia/2025/feature-2.jpg" alt="Toyota bZ4X vue côté" class="car-image">
+                    <img src="https://www.usnews.com/object/image/00000190-e086-d6d1-a7b6-e4afe71d0001/01-usnpx-2025toyotacrownsignia-dashboard-jmv.JPG?size=responsiveGallery&update-time=1721753890655" alt="Toyota bZ4X vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>Toyota bZ4X (2025)</h2>
+                    <div class="car-price">À partir de 42.990 €</div>
+                    <p>Le premier SUV 100% électrique de Toyota, combinant fiabilité et innovation.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 513 km (WLTP)</li>
+                            <li>Puissance: 204 ch (version 2 roues motrices)</li>
+                            <li>Charge rapide: 80% en 30 minutes</li>
+                            <li>Systèmes de sécurité Toyota Safety Sense 3.0</li>
+                            <li>Écran tactile 12,3" avec Android Auto et Apple CarPlay</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="toyotaBack">Retour aux marques</button>
+        </div>
+        
+        <div class="car-container hide" id="audiPage">
+            <h1>Dernier Modèle Audi</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://squir.com/media/catalog/product/cache/a6c3fe069da59bc133a34f22eabb1ab7/a/u/audi_a6_avant_e-tron_2025_0000.jpg" alt="Audi Q8 e-tron vue principale" class="car-image main-car-image">
+                    <img src="https://i.ytimg.com/vi/eVK3ZWdPA6s/maxresdefault.jpg" alt="Audi Q8 e-tron vue arrière" class="car-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-audi-a6-e-tron-121-66a90636d2e51.jpg" alt="Audi Q8 e-tron vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>Audi Q8 e-tron (2025)</h2>
+                    <div class="car-price">À partir de 86.700 €</div>
+                    <p>Le SUV électrique haut de gamme d'Audi, combinant technologie de pointe et design élégant.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 582 km (WLTP)</li>
+                            <li>Puissance: jusqu'à 408 ch (version SQ8)</li>
+                            <li>Transmission intégrale quattro</li>
+                            <li>Cockpit virtuel Audi avec écran MMI de 10,1"</li>
+                            <li>Suspension pneumatique adaptative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="audiBack">Retour aux marques</button>
+        </div>
+        
+        <div class="car-container hide" id="mercedesPage">
+            <h1>Dernier Modèle Mercedes</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://i.ytimg.com/vi/WzIv3kCKhgA/hq720.jpg?rs=AOn4CLAQZWw44DI46e1mDPuj1fUNGoPYlA&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD" alt="Mercedes EQS vue principale" class="car-image main-car-image">
+                    <img src="https://i.ytimg.com/vi/yey47IPHRQE/hq720.jpg?rs=AOn4CLCJZuKkV4iS2PJdxJvP4MpKVtZkqw&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD" alt="Mercedes EQS vue arrière" class="car-image">
+                    <img src="https://i.ytimg.com/vi/Djz3X0YGyNM/maxresdefault.jpg" alt="Mercedes EQS vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>Mercedes EQS (2025)</h2>
+                    <div class="car-price">À partir de 125.950 €</div>
+                    <p>La berline électrique luxueuse de Mercedes redéfinissant l'excellence automobile.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 780 km (WLTP)</li>
+                            <li>Puissance: jusqu'à 658 ch (version AMG)</li>
+                            <li>Hyperscreen MBUX de 141 cm de large</li>
+                            <li>Système audio Burmester 4D Surround</li>
+                            <li>Conduite semi-autonome de niveau 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="mercedesBack">Retour aux marques</button>
+        </div>
+        
+        <div class="car-container hide" id="peugeotPage">
+            <h1>Dernier Modèle Peugeot</h1>
+            <div class="car-details">
+                <div class="car-gallery">
+                    <img src="https://i.ytimg.com/vi/DThWSN59xok/sddefault.jpg" alt="Peugeot e-3008 vue principale" class="car-image main-car-image">
+                    <img src="https://i.ytimg.com/vi/OvmzU3BBYpo/hq720.jpg?rs=AOn4CLDsOVEwYVc9lnn1MeT76WT8D1S4ng&sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD" alt="Peugeot e-3008 vue côté" class="car-image">
+                    <img src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2023/02/peugeot-508-facelift-12.jpg" alt="Peugeot e-3008 vue intérieure" class="car-image">
+                </div>
+                <div class="car-info">
+                    <h2>Peugeot e-3008 (2025)</h2>
+                    <div class="car-price">À partir de 44.990 €</div>
+                    <p>Le nouveau SUV électrique de Peugeot avec un design futuriste et des technologies avancées.</p>
+                    <div class="car-options">
+                        <h3>Caractéristiques principales</h3>
+                        <ul>
+                            <li>Autonomie: jusqu'à 700 km (WLTP)</li>
+                            <li>Puissance: 210 ch</li>
+                            <li>Peugeot i-Cockpit panoramique avec écran incurvé de 21"</li>
+                            <li>Conduite semi-autonome avec Drive Assist Plus</li>
+                            <li>Recharge rapide: 20-80% en 30 minutes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="back-button" id="peugeotBack">Retour aux marques</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
